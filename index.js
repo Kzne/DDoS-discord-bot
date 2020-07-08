@@ -17,7 +17,7 @@ const fixes = "Bot Is Back."
 const fetch = require('node-fetch');
 const axios = require("axios");
 const { Console } = require('console')
-const myServer = "725826770791563284"
+const myServer = "729867006635016322"
 
 
 
