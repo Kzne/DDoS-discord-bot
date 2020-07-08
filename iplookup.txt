@@ -1,0 +1,20 @@
+b status :arrow_right: success 
+ continent :arrow_right: North America 
+ country :arrow_right: United States 
+ countryCode :arrow_right: US 
+ region :arrow_right: CA 
+ regionName :arrow_right: California 
+ city :arrow_right: Fountain Valley 
+ district :arrow_right:  
+ zip :arrow_right: 92708 
+ timezone :arrow_right: America/Los_Angeles 
+ currency :arrow_right: USD 
+ isp :arrow_right: Charter Communications 
+ org :arrow_right: Spectrum 
+ as :arrow_right: AS20001 Charter Communications   
+ asname :arrow_right: TWC-20001-PACWEST 
+ reverse :arrow_right: cpe-45-48-145-227.socal.res.rr.com 
+ mobile :arrow_right:false
+ proxy :arrow_right:false
+ hosting :arrow_right:false
+ query :arrow_right: 45.48.145.227 
